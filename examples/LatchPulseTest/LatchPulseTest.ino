@@ -6,14 +6,14 @@
 // open source (see LICENSE file)
 //
 // notes:
-// * for the Tlc59711 library, this test is part of Tlc59711Test
+// * for the TLC59711 library, this test is part of TLC59711Test
 // * for this test
 //  - the red LEDs should be constant on
 //  - the green and blue LEDs should blink (1s on, 1s off)
 // * the test fails as follows
 //  - the red LEDs change (every second) between 2 intensities
 //  - the blue LEDs do not turn off fully
-// * reason: see GitHub Wiki of the Tlc59711 library
+// * reason: see GitHub Wiki of the TLC59711 library
 //
 
 #include <Adafruit_TLC59711.h>

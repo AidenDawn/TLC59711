@@ -1,26 +1,26 @@
 //
-// Tests for Tlc59711 library
+// Tests for TLC59711 library
 //
 // 22 Feb 2016 by Ulrich Stern
 //
 // open source (see LICENSE file)
 //
 // notes:
-// * see page "Running Tlc59711Test" of the library's Wiki on GitHub
+// * see page "Running TLC59711Test" of the library's Wiki on GitHub
 //
 
-#include <Tlc59711.h>
+#include <TLC59711.h>
 
 const int NUM_TLC = 2;
 const int NUM_MODES = 6;   // should match setXferMode()
 
-Tlc59711 tlc(NUM_TLC);
+TLC59711 tlc(NUM_TLC);
 
 void setup() {
   Serial.begin(9600);
   while (!Serial) { }
 
-  Serial.println("testing Tlc59711 library");
+  Serial.println("testing TLC59711 library");
   Serial.println("number chips: " + String(NUM_TLC) + "\n");
 }
 

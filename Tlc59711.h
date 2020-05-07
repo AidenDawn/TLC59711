@@ -15,15 +15,15 @@
 
 #include <Arduino.h>
 
-class Tlc59711 {
+class TLC59711 {
 
 public:
   // object default state: (matches reset())
   // - all grayscale (PWM) values 0
   // - all brightness values 127 (maximum)
-  Tlc59711(uint16_t numTlc, uint8_t clkPin = 13, uint8_t dataPin = 11);
+  TLC59711(uint16_t numTLC, uint8_t clkPin = 13, uint8_t dataPin = 11);
 
-  ~Tlc59711();
+  ~TLC59711();
 
   // select data transfer mode
   // * beginFast():
@@ -76,7 +76,7 @@ public:
   void end();
 
 private:
-  const uint16_t numTlc, bufferSz;
+  const uint16_t numTLC, bufferSz;
   const uint8_t clkPin, dataPin;
   uint16_t *buffer, *buffer2;
   bool beginCalled;

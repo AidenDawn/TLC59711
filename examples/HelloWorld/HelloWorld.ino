@@ -1,16 +1,16 @@
 //
-// "Hello World" for Tlc59711 library
+// "Hello World" for TLC59711 library
 //
 // 27 Feb 2016 by Ulrich Stern
 //
 // open source (see LICENSE file)
 //
 
-#include <Tlc59711.h>
+#include <TLC59711.h>
 
 const int NUM_TLC = 2;
 
-Tlc59711 tlc(NUM_TLC);
+TLC59711 tlc(NUM_TLC);
 
 void setup() {
   tlc.beginFast();
